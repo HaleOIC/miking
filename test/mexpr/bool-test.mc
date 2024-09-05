@@ -13,6 +13,7 @@ utest false with false in
 
 -- Boolean not
 utest true with not false in
+utest false with not true in
 
 -- Boolean and
 utest true with and true true in
