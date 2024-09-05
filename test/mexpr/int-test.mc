@@ -22,6 +22,7 @@ utest 1 with modi 9 2 in              -- modulo
 -- Integer negations
 -- int -> int
 utest 15 with addi 20 (negi 5) in
+utest 3 with addi (negi 3) 7 in
 utest negi 1 with -1 in
 utest negi -1 with 1 in
 -- Integer comparison operators

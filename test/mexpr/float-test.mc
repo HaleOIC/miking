@@ -122,4 +122,11 @@ let taxicab2_1 = addf (powf3 1.0) (powf3 12.0) in
 let taxicab2_2 = addf (powf3 9.0) (powf3 10.0) in
 utest taxicab2_1 with taxicab2_2 using eqf in
 
+-- Test: computing with floats
+-- powf4 x = x^4
+let powf4 = lam x. mulf (mulf x x) (mulf x x) in
+let leftSide = addf (addf (powf4 1.0) (powf4 6.0)) (addf (powf4 3.0) (powf4 4.0)) in
+let rightSide = 1634.0 in 
+utest leftSide with rightSide using eqf in  
+
 ()
